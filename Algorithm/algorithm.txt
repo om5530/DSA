@@ -1,0 +1,104 @@
+//What is algorithm?
+//An algorithm is a set of well-defined instructions to solve a perticular problem.
+
+//Algorithm to add two numbers
+
+//input - two numbers 'a and 'b'
+//algorithm - add number using '+' return the value 
+//output - sum of 'a' and 'b' 
+
+//Why Algorithm ?
+// As a devloper you're going to come across problem that you need to solve
+//Learning algorithm translates to learn diffenent techniques to efficiently solve those problems
+//one problem cane solved in many ways using different algorithms
+//Every algorithms= comes with its own tradeoffs when it comes to performance. 
+
+
+
+//Algorithm analysis
+//we evaluate the performance of an alogorithm in terms of its input size
+Time complexity - Amount of time taken by an alogrithm to run, an a function of input size
+Space complexity - Amount of memory taken by an alogorithm to run, an a function of input size
+
+If your app needs to be very quick and plenty of menory to work with, you don't have to worry about space complexity.
+If you have very little menory to work with,you should pick a solution that is relatively slower but needs less space.
+ 
+ //how to represent complexity
+ Asymptotic notations
+ -Mathematical tool to represent time and space complexity
+ 1.Big O (O-notation) - worst case complexity
+ 2.Omega notation (Ω-notation) - best case complexity
+ 3.Theta notation (Θ-notation) - average case complexity
+
+
+//Big O notation
+Big-O notation describes the complexity of an algorithm using algebraic terms
+
+
+//Big-O Time-complexity
+
+Program
+algorithm to find sum of first n of natural numbers 
+//function summation(n){
+  let sum = 0;             --------- 1
+  for(let i=1;i<n;i++){
+    sum += i      -----------------  4
+  }
+  return sum         --------------- 1
+}
+Time complexity is o(n) - linear
+
+Big - O Calculation
+function summation(n){
+  return (n * (n+1))/2 
+}
+Time complexity o(1)-constant
+
+If there are two nested loop then complexity is O(n^2) - quadratic  3n^2 + 5n + 1
+
+If there are three nested loop then complexity is O(n^3) - cublic
+
+input size reduces by half every iteration o(log n) - Logarithmic
+ 
+
+
+space complexity
+o(1) -constant
+o(n) -linear
+o(log n) -Logarithmic
+
+
+
+Objects -Big-o
+An object is a collection of key value pair
+insert-O(1)
+remove-O(1)
+access-O(1)
+search-O(n)
+objects.keys()-O(n)   - It return array of all the keys in that object
+objects.vakues()-O(n)  - It return array of all the values on that object
+objects.entries()-O(n)  -
+
+
+Arrays -Big o
+An array is an ordered collection of values
+insert/remove at end - O(1)
+insert/remove at beginning - O(n)
+access - o(1)
+search - o(n)
+push / pop - o(1)- constant
+shift /unshift / concat /slice / splice - O(n) - linear
+forEach /map /filter/reduce - o(n)
+
+
+
+
+
+
+
+
+Big -O guide 
+Calculation not dependent on input size -O(1)
+1.loop -O(n)
+2. nested loop - O(n^2)
+input size reduced by half - O(logn)

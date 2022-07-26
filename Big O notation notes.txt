@@ -1,0 +1,131 @@
+Big O Notation :Big O notation is the language we use for talking about how long an algorithm takes to run (time complexity) or how much memory is used by an algorithm (space complexity). Big O notation can express the best, worst, and average-case running time of an algorithm.
+
+Three greek letters omega , Theta and omicron(omicron better known as big O)
+
+ If we are looking for numbers of iteration 
+ 1,2,3,4,5,6,7
+ number 1 is best case ( Represented by omega)
+ number 7 is worst case(Represented by omicron)
+ and number 4 is average case( Represented bytheta)
+ 
+ ----------------------------------------------------
+ /First Big O notation
+ o(n)
+
+ Ex:
+ function IogItem(n){
+  for (let i=0;i<n;i++){
+    console.log(i)
+  }
+ }
+ logItems(10);
+
+ o(n) is always going to be a stright line ,it is proportional 
+
+ In the graph horizontal axis represent n and vertical axis represents number of operations
+
+
+---------------------------------------------------
+Drop Constant
+ 
+ function IogItem(n){
+  for (let i=0;i<n;i++){
+    console.log(i)
+  }
+    for (letj=0;j<n;j++){
+    console.log(j)
+  }
+ }
+ logItems(10);
+
+ n+n = 2n -------- It doesn't matter if it is two n three or 100 n if there is a contant -----we drop the constant and we write o(n )
+
+ ----------------------------------------------------
+ o(n2)
+
+  function IogItem(n){
+  for (let i=0;i<n;i++){
+        for (letj=0;j<n;j++){
+   console.log(i,j)
+  }
+  }
+
+ }
+ logItems(10);
+
+ The number of item that were output in this case is n time n(n*n = n^2)
+ o(n^2)  
+ If we run three nested loops output will be o(n^3) but it doesn't matter if it's into third ,forth or tenth we are still going to write this as o(n^2)
+
+ NOte ::::---If we compare between O(n^2) and o(n) ------o(n) code is better because it's going to complete the task in fever operations.
+
+o(n) is much more efficient
+
+ ----------------------------------------------------
+ Drop Non-Dominants
+
+
+ function IogItem(n){
+  for (let i=0;i<n;i++){
+        for (letj=0;j<n;j++){ ----// o(n^2)
+   console.log(i,j)
+  }
+
+  for (let k=0;k<n;k++){ -----//o(n)
+    }
+  }
+
+ }
+ logItems(10);
+
+ o(n^2 + n) 
+ n is not affecting the number of operations is squared is the Dominants term  and n by itself is non-Dominants term so we just remove it  
+ o(n^2)
+
+ ----------------------------------
+   o(1) 
+
+
+ function IogItem(n){
+   return n + n  //o(1)
+ }
+ logItems(10);
+
+ It's just a flat line across the bottom in graph , It is the most efficient big(o),nothing is more efficient then o(1)
+contant time that is o(1)
+
+
+
+ ------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  O(log n)
+divide and conquer
+
+2^3 = 8 ---  log  8 =3 ---- 2 ^? = 8
+                 2
+
+
+o(log n) is very flat on graph not as flat as o(1) but very flat very efficient
+
+
+//----------------------------------
+
+Arrays
+
+array.push() and array.pop()  we dont have to reindex big o is 0(1)
+array.shift() and array.unshift() we have to reindex so this is 0(n)
+
+o(n) n is the number of items in array
+
+
+If you need to access things by index arrays are a great data structure
+
+
+/------------------------------------------
+Wrap Up
+if consider n = 100              👇difference words and phrases    
+then o(1)= 1                     constant
+     0(log n) == aprox 7         divide and conquer
+     o(n) =100                   proportional
+     o(n^2)=10000                loop within a loop
+
+     
