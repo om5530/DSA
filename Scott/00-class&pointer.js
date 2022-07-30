@@ -4,10 +4,6 @@
 //Since objects can be enhanced ,there are many ways to create objects sharing methods and properties.
 //but we want the simplest one
 
-
-
-
-
 // <script>
 // class Car {
 //   constructor(brand) {
@@ -20,8 +16,6 @@
 // </script>
 
 //result will be My car ia a Ford.
-
-
 
 
 //class

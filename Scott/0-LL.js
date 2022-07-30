@@ -163,11 +163,10 @@ class LinkedList {
   
 }
 }
-let myLinkedList = new LinkedList(1)
+let myLinkedList = new LinkedList(0);
+myLinkedList.push(1);
 myLinkedList.push(2)
 myLinkedList.push(3)
 myLinkedList.push(4)
 myLinkedList.push(5)
-// myLinkedList.pop()
-
-console.log(myLinkedList.get(4))
+// console.log(myLinkedList.get(4))
