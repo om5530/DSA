@@ -4,9 +4,8 @@ function selectionSort(array){
       min = i
       console.log(min)
       for(let j = i+1 ; j < array.length; j++){
-        // console.log(  )
-           if(array[j] < array[min]) { min = j}
-          //  console.log( 'indexJ ' +array[j] ,'indexMin ' +array[min] ,'min ' + min , 'inner ' + j  ) 
+      if(array[j] < array[min]) { min = j}
+      console.log('indexJ ' +array[j] ,'indexMin ' +array[min] ,'min ' + min , 'inner ' + j) 
       }
       if(i !== min){
       let temp = array[i]
