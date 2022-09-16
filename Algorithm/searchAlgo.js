@@ -2,8 +2,6 @@
 //binary search
 
 
-
-
 //------------------------Linear Search 
 //it can take both sorted and unsorted array
 //Problem - Given an array of 'n' elements and a target element 't',find the index of 't' in the array. return -1 if the target ekement is not found

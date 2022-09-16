@@ -17,7 +17,7 @@ function sentence(str){
     str = str.split(' ')
     let newStr = ''
     for (let i = 0; i< str.length ; i++){
-      newStr = newStr +' '+reverseStr(str[i])
+      newStr = newStr +' '+ reverseStr(str[i])
     }
     return newStr
 }

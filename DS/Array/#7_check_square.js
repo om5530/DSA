@@ -18,12 +18,6 @@ function isSquareCheck(array1, array2) {
 console.log(isSquareCheck([1, 2, 3, 4], [1, 9, 4, 16]));
 
 
-
-
-
-
-
-
 //arr1 = [ 1,2,3,4] ,arr2 = [1,9,4,16] -case 1
 //arr1 = [ 1,2,4,2] ,arr2 = [1,4,4,16] -case 2
 

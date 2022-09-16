@@ -61,7 +61,6 @@ If there are three nested loop then complexity is O(n^3) - cublic
 input size reduces by half every iteration o(log n) - Logarithmic
  
 
-
 space complexity
 o(1) -constant
 o(n) -linear
@@ -89,11 +88,6 @@ search - o(n)
 push / pop - o(1)- constant
 shift /unshift / concat /slice / splice - O(n) - linear
 forEach /map /filter/reduce - o(n)
-
-
-
-
-
 
 
 
