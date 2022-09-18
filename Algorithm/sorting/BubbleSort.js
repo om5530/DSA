@@ -20,11 +20,7 @@ function bubbleSort(array){
 }
 let array = [2,1,4,3,5,6,7,9,8]
 
- console.log(bubbleSort(array));
-
-
-
-
+ console.log(bubbleSort(array)); 
  ///----Method 2
 
  function bubbleSort(array) {

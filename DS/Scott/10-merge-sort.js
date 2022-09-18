@@ -11,15 +11,17 @@ function merge(arr1 , arr2){
             j++
         }
     }
-    while(i<arr1.length){
-        combined.push(arr1[i])
-        i++
-    }
-        while(j<arr2.length){
-        combined.push(arr2[j])
-        j++
-    }
-    return combined
+    // while(i<arr1.length){
+    //     combined.push(arr1[i])
+    //     i++
+    // }
+    //     while(j<arr2.length){
+    //     combined.push(arr2[j])
+    //     j++
+    // }
+
+    // return combined
+    return [...combined,...arr1.slice(i),...arr2.slice(j)]
     
 }
 
@@ -36,4 +38,4 @@ function mergeSort(array){
     return merge(mergeSort(left),mergeSort(right))
 }
 
-// mergeSort([3,4,5,2,1])
+console.log(mergeSort([3,4,5,2,1]))
