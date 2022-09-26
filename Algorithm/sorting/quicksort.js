@@ -1,32 +1,23 @@
-let arr = [ 2,1,4,3,5,6,7,8,10,6]
-
-function partition(arr,left,right){
-  let i = left
-  let j = right
-  let pivot = arr[Math.floor((left+right )/2)]
-  while(i <= j){
-    while(arr[i] < pivot){
-            i++
-    }
-    while(arr[j] > pivot){
-      j--
-    }
-    if(i <= j ){
-      [arr[i], arr[j]] = [arr[j], arr[i]]
-      i++
-      j--
+function pivot(array, pivotIndex = 0, endIndex = array.length - 1) {
+  let swapIndex = pivotIndex;
+  for (let i = pivotIndex + 1; i <= endIndex; i++) {
+    if (array[i] < array[pivotIndex]) {
+      swapIndex++;
+      [array[swapIndex], array[i]] = [array[i], array[swapIndex]];
     }
   }
-  return i
+  [array[pivotIndex], array[swapIndex]] = [array[swapIndex], array[pivotIndex]];
+  return swapIndex;
 }
 
-function quickSort(arr,left=0,right=arr.length -1 ){
-
-  if(right > left){ 
-     let pivot = partition(arr,left,right)
-     quickSort(arr,left,pivot-1)
-     quickSort(arr,pivot+1,right)
+function quickSort(array, left = 0, right = array.length - 1) {
+  while (left < right) {
+    let pivotIndex = pivot(array, left, right);
+    quickSort(array, left, pivotIndex - 1);
+    quickSort(array, pivotIndex + 1, right);
   }
-  return arr
+  return array
 }
-console.log(quickSort(arr))
+
+console.log(pivot([4, 6, 1, 7, 3, 2, 5]));
+console.log(quickSort([4, 6, 1, 7, 3, 2, 5]));
