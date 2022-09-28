@@ -21,3 +21,4 @@ function quickSort(array, left = 0, right = array.length - 1) {
 
 console.log(pivot([4, 6, 1, 7, 3, 2, 5]));
 console.log(quickSort([4, 6, 1, 7, 3, 2, 5,0,10,9,8]));
+console.log(quickSort([4, 3, 2, 5, 6, 7, 8, 9, 1, 2]));
