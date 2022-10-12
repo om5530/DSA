@@ -22,3 +22,21 @@
 
  console.log(bubbleSort([2, 7, 4, 1, 5, 3]));
  console.log(bubbleSort([-6,20,8,-2,4]));
+
+
+
+
+
+
+// function bubbleSort(arr) {
+//   for (let i = 0; i < arr.length; i++) {
+//     for (let j = 0; j < arr.length; j++) {
+//       console.log(' i>> ', arr[i], ' j>> ', arr[j])
+//       if (arr[j] > arr[j + 1]) {
+//         [arr[j], arr[j + 1]] = [arr[j + 1], arr[j]];
+//       }
+//       // console.log(' i>> ', arr[i], ' j>> ', arr[j])
+//     }
+//   }
+//   return arr;
+// }
