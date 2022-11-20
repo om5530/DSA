@@ -1,0 +1,118 @@
+ DSA maine 
+Mainly Array and Strings hi kiye the bahut achche  se
+And baakiyon ke code bas bna leti thi and most important concept sb pta kar liya jisse verbally to bahit achche se bta deti thi
+
+
+ Three parts in that 
+1. Javascript - mostly theory questions with 2-3 code like what will be the output 
+2. Frontend - html, css, react questions 
+3. Backend - SQL, http methods, requests, header, few output finding question
+
+
+ Introduction
+Coding- 
+1. Reverse words in a sentence
+2. Permutation of a word(possible combinations of a word) like army, mary, etc
+3. check a string is palindrome or not
+4. check 2 strings are anagram or not
+
+DSA verbal-
+1. Time complexities of all codes
+2. Linkedlist - find length and remove 1 node
+3. implement queue using stacks with Time complexity
+
+Puzzle- 
+1. How to cut 8 slices of a cake quickly
+2. 10 weights- 1 is heavy and 9 not heavy but same-- find the heavier fast
+3. 2 jugs- 1 is of 4 litre, another is of 5 litre---need to fill 7 litres in a bucket
+4. 10 coins on table - 1 facing head, and others tail--need to make 2 stacks with same number of heads
+
+Discussion-
+Why startup?
+
+ NextHire ka screening hua tha aaj
+1. Introduction
+2. Part of API
+3. $set, $pull
+4. Child process
+5. Checking confidence mostly
+
+ 1. Introduction
+2. process.nexttick, uncaughtException, setImmediate() -  what are these?
+3. What we can do to no let server down?
+4. Puzzle - we have 2 jugs one is of 3liter and other is 5 liter, how to measure exactly 4 liters?
+and 
+need to make 8 slices of a cake in 3 moves
+
+
+
+1. Introduction
+2. DSA coding - LRU cache
+3. Why startup?
+
+
+ Introduction
+2. Why want to restart career
+3. Asked about all the tech stacks I know 
+4. They want experience
+5. For freshers - they are providing internship saying they will pay - 15000/month
+
+
+ 1. Introduction
+2. They are looking for PHP and Angular developers
+3. What is call and apply?
+4. What is Imediate invoking function?
+5. How you are using mongodb in projects?
+6. How to delete a data from database?
+db.books.deleteOne({"_id" : 3}) 
+7. What is indexing in database?
+8. var x = 23; 
+(function(){ 
+var x = 43; 
+(function random(){
+ x++; 
+console.log(x); 
+var x = 21; })(); })(); 
+Find the o/p
+9. Write a constructor function.
+10. Puzzles - 
+a. you have a scooter with 2 tyres and 1 stepny tyre, all the tyres have life of 20 km, how far you can go?
+b. in a dark room, there are 10 red socks, 10 blue socks and 10 green socks
+how much less quantity you can bring once so that you'll get one pair of socks
+
+
+ 1. There are 2 strings of same length, check each character of both the strings, and print '0' if first string's character is smaller than other and '1' otherwise
+I/P - str = 'army', str1 = 'done'
+O/P - '0101'
+2. Same as 1, but need to check all the characters
+O/P - '000011110001111'
+3. Same input, check the difference between the characters, if difference is greater than 5, print '0', otherwise '1'
+O/P - '1110'
+4. same input, check the difference , if the difference is less than equal to 5, print smaller character, and if the difference is more than 5, like suppose difference is 8 for 'e' to 'm', count till 5 then again start from 'e' and count till 8 - 5 that is 3 and print the third character
+
+
+ 1. Introduction
+2. Questions related to Networking- 
+a. What happens when you type www.google.com in a browser address bar? What all does the browser do to get you the homepage of Google?
+b. How we connect 2 computers with LAN ?
+c. How to search for 1 computer through LAN in 10 computers?
+d. What is DNS?
+3. Given an array of integers [1,4,57,7,2,3,5,8,9,12], find the largest number - want solution of TC - O👎
+4. Given an array of integers [1,4,57,7,2,3,5,8,9,12], find the largest product of 2 numbers, a[n]>0, n>2
+5. Given an array of integers [1,4,57,7,2,3,5,8,9,12], find the largest product of 3 numbers, a[n]>0, n>2
+6. Given an array of integers [1,4,57,7,2,3,5,8,9,12], find the largest product of k numbers, a[n]>0, n>2
+7. Algorithm of Min Heap
+
+
+ 1. Introduction
+2. Explain the last project- how you achieve it?
+3. How to make project scalable?
+4. Promise, async - await
+5. JWT, middleware
+6. Authentication, Authorization
+7. Components in ReactJS
+8. Do you know about E9?, Then he explained about company
+
+
+ 1. There are 2 jars A and B
+one is filled with random number of balls, need to pick ball from A and put it in B, but in Jar B , it should be sorted
