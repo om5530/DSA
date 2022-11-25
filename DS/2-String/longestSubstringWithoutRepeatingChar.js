@@ -23,3 +23,16 @@ const lengthOfLongestSubstring = (s) => {
 };
 
 console.log(lengthOfLongestSubstring('abcabcbb'));
+
+const lengthOf = (s) => {
+  let map = new Map()
+  for (let el of s) {
+    if (!map.has(el)) {
+      map.set(el, 1)
+    }
+  }
+  return map.size
+}
+
+console.log(lengthOf('abcabcbb'));
+console.log(lengthOf('bbbbbb'));
