@@ -1,15 +1,15 @@
 
-// function reverseStr(str){
-//   str = str.split('');
-//   let left = 0;
-//   let right = str.length - 1;
-//   while(left < right){
-//       [str[left],str[right]] = [str[right], str[left]]
-//       left++;
-//       right--;
-//   }
-//   return str.join('')
-// }
+function reverseStr(str){
+  str = str.split('');
+  let left = 0;
+  let right = str.length - 1;
+  while(left < right){
+      [str[left],str[right]] = [str[right], str[left]]
+      left++;
+      right--;
+  }
+  return str.join('')
+}
 
 // let str3 = 'i am doing the work'
 
@@ -43,5 +43,3 @@ function reverse(str){
 
 
   console.log(reverse(s))
-
-  
